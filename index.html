@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias Pós-Colheita | O Futuro da Agricultura</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <header class="bg-gradient-to-r flow-root from-emerald-600 to-teal-700 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-16 text-center max-w-5xl">
+            <span class="bg-emerald-500/30 text-emerald-200 text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">Inovação Sustentável</span>
+            <h1 class="text-4xl md:text-5xl font-bold mt-4 mb-6 leading-tight">Tecnologias para Redução do Desperdício Pós-Colheita</h1>
+            <p class="text-lg md:text-xl text-emerald-100 max-w-2xl mx-auto">
+                Entre 30% e 40% dos alimentos são perdidos antes de chegar à mesa. Conheça as inovações que estão mudando esse cenário mundial.
+            </p>
+        </div>
+    </header>
+
+    <section class="container mx-auto px-6 -mt-8 max-w-5xl">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white p-6 rounded-xl shadow-md border border-slate-100">
+            <div class="text-center p-4 border-b md:border-b-0 md:border-r border-slate-100">
+                <span class="block text-3xl font-bold text-emerald-600">30% a 40%</span>
+                <span class="text-sm text-slate-500 font-medium">De desperdício global de alimentos</span>
+            </div>
+            <div class="text-center p-4 border-b md:border-b-0 md:border-r border-slate-100">
+                <span class="block text-3xl font-bold text-teal-600">2x mais</span>
+                <span class="text-sm text-slate-500 font-medium">Tempo de prateleira estimado</span>
+            </div>
+            <div class="text-center p-4">
+                <span class="block text-3xl font-bold text-cyan-600">100%</span>
+                <span class="text-sm text-slate-500 font-medium">Foco em Sustentabilidade</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-12 max-w-5xl">
+        
+        <div class="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
+            <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                <i data-lucide="cpu" class="text-emerald-600"></i> Tecnologias Inovadoras
+            </h2>
+            <div class="flex gap-2">
+                <button id="btn-all" class="px-4 py-2 text-sm font-medium rounded-lg bg-emerald-600 text-white shadow-sm transition-colors">Todas</button>
+                <button id="btn-conservacao" class="px-4 py-2 text-sm font-medium rounded-lg bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-colors">Conservação</button>
+                <button id="btn-monitoramento" class="px-4 py-2 text-sm font-medium rounded-lg bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-colors">Monitoramento</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="tech-grid">
+            
+            <div class="tech-card bg-white p-6 rounded-xl shadow-sm border border-slate-200" data-category="conservacao">
+                <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600 mb-4">
+                    <i data-lucide="layers"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Revestimentos Comestíveis e Biopolímeros</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Aplicação de películas invisíveis derivadas de plantas ou quitosana. Criam uma barreira microscópica que reduz a desidratação e retarda a oxidação, impedindo fungos sem aditivos químicos.
+                </p>
+            </div>
+
+            <div class="tech-card bg-white p-6 rounded-xl shadow-sm border border-slate-200" data-category="conservacao">
+                <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mb-4">
+                    <i data-lucide="package"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Embalagens Inteligentes e Ativas</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Filmes com microperfurações a laser que controlam gases (EMAP), associados a absorvedores de etileno e sensores colorimétricos que indicam o real frescor do alimento na gôndola.
+                </p>
+            </div>
+
+            <div class="tech-card bg-white p-6 rounded-xl shadow-sm border border-slate-200" data-category="monitoramento">
+                <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center text-cyan-600 mb-4">
+                    <i data-lucide="wifi"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Sensores IoT e Cadeia de Frio Inteligente</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Dataloggers monitoram temperatura, umidade e trepidação em tempo real. Algoritmos de "Gêmeos Digitais" prevêem a perda exata de vida útil da carga em caso de imprevistos logísticos.
+                </p>
+            </div>
+
+            <div class="tech-card bg-white p-6 rounded-xl shadow-sm border border-slate-200" data-category="monitoramento">
+                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 mb-4">
+                    <i data-lucide="eye"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Inteligência Artificial e Visão Computacional</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Esteiras inteligentes usam câmeras de alta velocidade e espectroscopia de infravermelho próximo (NIR) para analisar o teor de açúcar, acidez e defeitos internos sem cortar a fruta.
+                </p>
+            </div>
+
+            <div class="tech-card bg-white p-6 rounded-xl shadow-sm border border-slate-200" data-category="conservacao">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-4">
+                    <i data-lucide="sparkles"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Sanitização Avançada (Ozônio e Plasma Frio)</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Tratamento com ozônio gasoso ou plasma frio que elimina patógenos e micotoxinas da superfície de grãos e vegetais. Tecnologia limpa, eficiente e sem resíduos químicos.
+                </p>
+            </div>
+
+            <div class="tech-card bg-white p-6 rounded-xl shadow-sm border border-slate-200" data-category="monitoramento">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                    <i data-lucide="link"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Blockchain e Rastreabilidade Radical</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Registro imutável de todas as etapas logísticas. Permite identificar problemas sanitários pontuais em segundos, evitando o descarte desnecessário de lotes inteiros saudáveis.
+                </p>
+            </div>
+        </div>
+
+        <section class="mt-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 shadow-xl">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-2xl font-bold mb-2 flex items-center gap-2 text-emerald-400">
+                    <i data-lucide="calculator"></i> Simulador de Vida Útil (Shelf-Life)
+                </h2>
+                <p class="text-slate-400 text-sm mb-6">Veja o impacto cumulativo da adoção dessas tecnologias na preservação do alimento.</p>
+                
+                <div class="space-y-4">
+                    <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
+                        <label class="flex items-center justify-between cursor-pointer">
+                            <div>
+                                <span class="block font-medium">Revestimento Comestível</span>
+                                <span class="text-xs text-slate-400">Retarda a oxidação celular</span>
+                            </div>
+                            <input type="checkbox" id="check-coating" class="w-5 h-5 accent-emerald-500 rounded">
+                        </label>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
+                        <label class="flex items-center justify-between cursor-pointer">
+                            <div>
+                                <span class="block font-medium">Embalagem com Absorvedor de Etileno</span>
+                                <span class="text-xs text-slate-400">Inibe o gás do amadurecimento</span>
+                            </div>
+                            <input type="checkbox" id="check-ethylene" class="w-5 h-5 accent-emerald-500 rounded">
+                        </label>
+                    </div>
+
+                    <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
+                        <label class="flex items-center justify-between cursor-pointer">
+                            <div>
+                                <span class="block font-medium">Sensores IoT de Cadeia de Frio</span>
+                                <span class="text-xs text-slate-400">Garante temperatura ideal constante</span>
+                            </div>
+                            <input type="checkbox" id="check-iot" class="w-5 h-5 accent-emerald-500 rounded">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700 text-center">
+                    <p class="text-sm text-slate-400 uppercase tracking-wider">Tempo Estimado de Conservação</p>
+                    <div class="text-5xl font-black text-emerald-400 my-2" id="days-result">7 dias</div>
+                    <p class="text-xs text-slate-400" id="status-message">Condições logísticas padrão de mercado.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-500 text-sm py-12 mt-16 border-t border-slate-800">
+        <div class="container mx-auto px-6 text-center max-w-5xl">
+            <p class="mb-2 text-slate-400">Painel Tecnológico de Combate ao Desperdício Pós-Colheita</p>
+            <p>&copy; 2026 Agricultura Conectada. Feito para um futuro mais sustentável.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
